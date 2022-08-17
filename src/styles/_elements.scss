@@ -1,0 +1,52 @@
+.icon-button {
+	transition: all 0.2s ease-in-out 0s;
+	background: rgb(237, 231, 246);
+	width: 34px;
+	height: 34px;
+	font-size: 1.2rem;
+	border-radius: 8px;
+	color: rgb(94, 53, 177);
+	border: none;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	&:hover {
+		background: rgb(223, 206, 248);
+	}
+}
+
+.second-icon-button {
+	width: 34px;
+	height: 34px;
+	font-size: 1.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	border: 1px solid rgb(227, 242, 253);
+	background: rgb(227, 242, 253);
+	color: rgb(30, 136, 229);
+	transition: all 0.2s ease-in-out 0s;
+	&:hover {
+		background: rgb(177, 223, 255);
+	}
+}
+
+.dashboard-card {
+	height: 150px;
+	padding: 20px;
+	border-radius: 15px;
+	background-color: #7ec1ff80;
+	color: #ffffff;
+	font-size: 1.2rem;
+}
+.dashboard-card2 {
+	height: 150px;
+	padding: 20px;
+	border-radius: 15px;
+	background-color: #52c41a2b;
+	color: #ffffff;
+	font-size: 1.2rem;
+}
