@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import { Divider } from 'antd';
 import {
 	LineChartOutlined,
@@ -31,48 +31,63 @@ const DashLayout = () => {
 					}
 				>
 					<div className='sidebar-nav'>
-						<Link to='/user/dashboard'>
+						<NavLink to='/user/dashboard/data'>
 							<div className='side-drawer-links'>
 								<LineChartOutlined />
 								<p>Analytics</p>
 							</div>
-						</Link>
+						</NavLink>
 						<Divider orientation='left' plain>
 							Leads
 						</Divider>
-						<Link to='/user/dashboard/leads'>
+						<NavLink
+							to='/user/dashboard/leads'
+							className={({ isActive }) => (isActive ? 'active' : 'inActive')}
+						>
 							<div className='side-drawer-links'>
 								<ExperimentOutlined />
 								<p>Leads</p>
 							</div>
-						</Link>
-						<Link to='/user/dashboard/clients'>
+						</NavLink>
+						<NavLink
+							to='/user/dashboard/clients'
+							className={({ isActive }) => (isActive ? 'active' : 'inActive')}
+						>
 							<div className='side-drawer-links'>
 								<AuditOutlined />
 								<p>Clients</p>
 							</div>
-						</Link>
+						</NavLink>
 						<Divider orientation='left' plain>
 							Account
 						</Divider>
-						<Link to='/user/dashboard/points'>
+						<NavLink
+							to='/user/dashboard/points'
+							className={({ isActive }) => (isActive ? 'active' : 'inActive')}
+						>
 							<div className='side-drawer-links'>
 								<DollarCircleOutlined />
 								<p>My Account</p>
 							</div>
-						</Link>
-						<Link to='/user/dashboard/points'>
+						</NavLink>
+						<NavLink
+							to='/user/dashboard/points'
+							className={({ isActive }) => (isActive ? 'active' : 'inActive')}
+						>
 							<div className='side-drawer-links'>
 								<RocketOutlined />
 								<p>Points</p>
 							</div>
-						</Link>
-						<Link to='/user/dashboard/rewards'>
+						</NavLink>
+						<NavLink
+							to='/user/dashboard/rewards'
+							className={({ isActive }) => (isActive ? 'active' : 'inActive')}
+						>
 							<div className='side-drawer-links'>
 								<GiftOutlined />
 								<p>Rewards</p>
 							</div>
-						</Link>
+						</NavLink>
 					</div>
 				</div>
 				<div className='main-div'>

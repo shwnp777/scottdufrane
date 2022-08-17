@@ -1,0 +1,57 @@
+.landing-nav {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 20px;
+	.landing-logo {
+		width: 150px;
+		.img {
+			width: 100%;
+		}
+		h1 {
+			color: blueviolet;
+		}
+	}
+	.landing-nav-right {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: center;
+		gap: 30px;
+	}
+}
+
+.section {
+	height: 500px;
+	width: 100%;
+	background-color: #fdecff;
+}
+
+.land-div {
+	position: relative;
+}
+
+a.toTop {
+	margin: 0 !important;
+}
+
+.toTop {
+	width: 37px;
+	height: 37px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: blueviolet;
+	color: #ffffff;
+	font-size: 14px;
+	position: fixed;
+	z-index: 2000;
+	margin-right: 0;
+	right: 40px;
+	bottom: 40px;
+}
