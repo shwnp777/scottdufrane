@@ -13,6 +13,11 @@
 	.ant-col {
 		width: 100%;
 	}
+	div.ant-row {
+		align-items: center;
+		justify-content: center;
+		height: 400px;
+	}
 	.circle-one {
 		position: absolute;
 		top: 20px;
@@ -55,8 +60,12 @@
 			text-align: center;
 			font-size: 1.3rem;
 		}
+		p {
+			text-align: center;
+			letter-spacing: 2px;
+		}
 		.paper-img {
-			width: 200px;
+			width: 300px;
 			img {
 				width: 100%;
 			}

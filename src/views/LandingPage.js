@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import AboutSection from '../components/sections/AboutSection';
 import ServiceSection from '../components/sections/ServiceSection';
 import ContactSection from '../components/sections/ContactSection';
@@ -17,9 +16,6 @@ const LandingPage = () => {
 				<BenefitsSection />
 				<ContactSection />
 			</div>
-			<Link to='/user/dashboard'>
-				<button>DashBoard</button>
-			</Link>
 			<BacktoTop />
 		</div>
 	);

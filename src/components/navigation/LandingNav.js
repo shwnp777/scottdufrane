@@ -33,16 +33,16 @@ const LandingNav = () => {
 				<h1>Logo</h1>
 			</div>
 			<div className='landing-nav-right'>
-				<Link to='about' spy={true} smooth={true} offset={50} duration={500}>
+				<Link to='about' spy={true} smooth={true} duration={500}>
 					About
 				</Link>
-				<Link to='service' spy={true} smooth={true} offset={50} duration={500}>
+				<Link to='service' spy={true} smooth={true} duration={500}>
 					Services
 				</Link>
-				<Link to='benefits' spy={true} smooth={true} offset={50} duration={500}>
+				<Link to='benefits' spy={true} smooth={true} duration={500}>
 					Benefits
 				</Link>
-				<Link to='contact' spy={true} smooth={true} offset={50} duration={500}>
+				<Link to='contact' spy={true} smooth={true} duration={500}>
 					Contact Us
 				</Link>
 			</div>

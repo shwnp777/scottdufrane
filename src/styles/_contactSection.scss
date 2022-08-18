@@ -1,0 +1,64 @@
+.contact-section {
+	padding: 30px 10px;
+	background-color: rgb(237, 231, 246);
+	color: #ffffff;
+	width: 100%;
+	border-radius: 15px;
+	padding: 40px 20px;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+	margin-top: 60px;
+	.circle-one-contact {
+		position: absolute;
+		z-index: 100;
+		bottom: 20px;
+		left: -80px;
+		width: 500px;
+		height: 500px;
+		border-radius: 50%;
+
+		background-color: rgba(175, 147, 230, 0.543);
+	}
+	.circle-two-contact {
+		position: absolute;
+		z-index: 100;
+		bottom: -20px;
+		left: -100px;
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+		background-color: rgb(167, 153, 196);
+	}
+	.contact-text {
+		max-width: 100%;
+		width: 500px;
+		z-index: 1000;
+		h3 {
+			color: rgb(94, 53, 177);
+			font-size: 2rem;
+			font-weight: 600;
+		}
+		p {
+			letter-spacing: 1px;
+			color: rgb(94, 53, 177);
+			font-size: 1.2rem;
+		}
+	}
+
+	.contact-form {
+		z-index: 1000;
+		width: 400px;
+		max-width: 100%;
+		background-color: rgb(94, 53, 177);
+		padding: 20px;
+		border-radius: 15px;
+		box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%),
+			0 9px 28px 8px rgb(0 0 0 / 5%);
+	}
+}
