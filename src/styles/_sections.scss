@@ -1,0 +1,93 @@
+.section-div {
+	padding: 30px 10px;
+}
+
+.hero-section {
+	background-color: rgb(5, 38, 71);
+	color: #ffffff;
+	width: 100%;
+	border-radius: 15px;
+	padding: 40px 20px;
+	overflow: hidden;
+	position: relative;
+	.ant-col {
+		width: 100%;
+	}
+	.circle-one {
+		position: absolute;
+		top: 20px;
+		right: -80px;
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+		background-color: rgb(32, 84, 137);
+	}
+	.circle-two {
+		position: absolute;
+		top: -20px;
+		right: -100px;
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		background-color: rgba(42, 72, 102, 0.566);
+	}
+
+	.hero-split {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+	h1 {
+		color: #ffffff;
+	}
+	.hero-half {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		h3 {
+			color: #ffffff;
+			text-align: center;
+			font-size: 1.3rem;
+		}
+		.paper-img {
+			width: 200px;
+			img {
+				width: 100%;
+			}
+		}
+		.hero-right-text {
+			text-align: center;
+			margin-bottom: 40px;
+		}
+	}
+	.hero-left {
+		width: 100%;
+		margin-bottom: 50px;
+		@media only screen and (min-width: 767px) {
+			margin-bottom: 0;
+		}
+	}
+	.hero-right {
+		button {
+			border: none;
+			transition: all 0.3s ease-in-out 0s;
+			padding: 15px 20px;
+			border-radius: 15px;
+			font-size: 1.3rem;
+			font-weight: 600;
+			background: rgb(237, 231, 246);
+			color: rgb(94, 53, 177);
+			cursor: pointer;
+			&:hover {
+				background: rgb(94, 53, 177);
+				color: rgb(237, 231, 246);
+			}
+		}
+	}
+}

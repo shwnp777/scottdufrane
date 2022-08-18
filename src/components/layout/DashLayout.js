@@ -62,12 +62,21 @@ const DashLayout = () => {
 							Account
 						</Divider>
 						<NavLink
-							to='/user/dashboard/points'
+							to='/user/dashboard/account'
 							className={({ isActive }) => (isActive ? 'active' : 'inActive')}
 						>
 							<div className='side-drawer-links'>
 								<DollarCircleOutlined />
 								<p>My Account</p>
+							</div>
+						</NavLink>
+						<NavLink
+							to='/user/dashboard/messages'
+							className={({ isActive }) => (isActive ? 'active' : 'inActive')}
+						>
+							<div className='side-drawer-links'>
+								<DollarCircleOutlined />
+								<p>Messages</p>
 							</div>
 						</NavLink>
 						<NavLink

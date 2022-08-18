@@ -15,6 +15,8 @@ import Rewards from './views/dashboardViews/Rewards';
 import LoginPage from './views/authViews/LoginPage';
 import RegisterPage from './views/authViews/RegisterPage';
 import LandLayout from './components/layout/LandLayout';
+import AuthLayout from './components/layout/AuthLayout';
+import Account from './views/dashboardViews/Account';
 
 const App = () => {
 	return (
@@ -32,9 +34,10 @@ const App = () => {
 				<Route path='clients' element={<Clients />} />
 				<Route path='points' element={<Points />} />
 				<Route path='rewards' element={<Rewards />} />
+				<Route path='account' element={<Account />} />
 			</Route>
 
-			<Route path='/user/auth' element={<LandLayout />}>
+			<Route path='/user/auth' element={<AuthLayout />}>
 				<Route path='login' element={<LoginPage />} />
 				<Route path='register' element={<RegisterPage />} />
 			</Route>

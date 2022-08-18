@@ -16,7 +16,7 @@ const DashboardNav = ({ showDrawer }) => {
 
 	const content = (
 		<div className='nav-top-links'>
-			<Link to='/user/dashboard/'>
+			<Link to='/user/dashboard/account'>
 				<div className='side-drawer-links'>
 					<p>Account Settings</p>
 				</div>
@@ -26,7 +26,7 @@ const DashboardNav = ({ showDrawer }) => {
 					<p>Edit Profile</p>
 				</div>
 			</Link>
-			<Link to='/user/dashboard'>
+			<Link to='/'>
 				<div className='side-drawer-links'>
 					<p>Logout</p>
 				</div>
