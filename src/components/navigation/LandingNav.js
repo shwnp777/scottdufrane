@@ -8,6 +8,7 @@ import {
 	MailOutlined,
 } from '@ant-design/icons';
 import { Dropdown } from 'antd';
+import Logo from '../../images/lotus.png';
 
 const LandingNav = () => {
 	const menu = (
@@ -30,8 +31,9 @@ const LandingNav = () => {
 	return (
 		<div className='landing-nav' id='landNav'>
 			<div className='landing-logo'>
-				<h1>Logo</h1>
+				<img src={Logo} alt='' />
 			</div>
+
 			<div className='landing-nav-right'>
 				<Link to='about' spy={true} smooth={true} duration={500}>
 					About

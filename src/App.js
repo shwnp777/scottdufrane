@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import './index.css';
 import './styles/App.scss';
 
@@ -17,15 +17,39 @@ import RegisterPage from './views/authViews/RegisterPage';
 import LandLayout from './components/layout/LandLayout';
 import AuthLayout from './components/layout/AuthLayout';
 import Account from './views/dashboardViews/Account';
+import { useSelector } from 'react-redux';
+import Success from './components/auth/Success';
 
 const App = () => {
+	const { isLoggedIn } = useSelector((state) => state.auth);
+
 	return (
 		<Routes>
 			<Route path='/' element={<LandLayout />}>
-				<Route index element={<LandingPage />} />
+				<Route
+					index
+					element={
+						!isLoggedIn ? (
+							<LandingPage />
+						) : (
+							<Navigate to='/user/dashboard/data' />
+						)
+					}
+				/>
+				<Route path='success' element={<Success />} />
 			</Route>
-			<Route path='/' element={<LandingPage />} />
-			<Route path='/user/dashboard' element={<DashLayout />}>
+
+			<Route
+				path='/'
+				element={
+					!isLoggedIn ? <LandingPage /> : <Navigate to='/user/dashboard/data' />
+				}
+			/>
+			<Route
+				path='/user/dashboard'
+				element={!isLoggedIn ? <Navigate to='/' /> : <DashLayout />}
+			>
+				<Route path='success' element={<Success />} />
 				<Route path='data' element={<Dashboard />} />
 				<Route path='payments' element={<Payments />} />
 				<Route path='edit-profile' element={<EditProfile />} />

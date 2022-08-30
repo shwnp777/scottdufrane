@@ -9,7 +9,6 @@ const BacktoTop = () => {
 			className='toTop'
 			spy={true}
 			smooth={true}
-			offset={50}
 			duration={500}
 		>
 			<ArrowUpOutlined />
